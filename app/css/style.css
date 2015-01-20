@@ -1,0 +1,19 @@
+
+  body{
+    font-family: Helvetica, sans-serif;
+  }
+
+  ul{
+    list-style-type: none;
+  }
+
+  .menu{
+    background-color: yellow;
+  }
+
+  .block img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
