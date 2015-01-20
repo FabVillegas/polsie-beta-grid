@@ -3,12 +3,7 @@
     font-family: Helvetica, sans-serif;
   }
 
-  ul{
-    list-style-type: none;
-  }
-
   .menu{
-    background-color: yellow;
   }
 
   .block img{
@@ -16,4 +11,9 @@
     max-width: 100%;
     height: auto;
     max-height: 100%;
+  }
+
+
+  .testClass{
+    background-color: blue;
   }

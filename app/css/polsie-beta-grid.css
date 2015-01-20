@@ -1,5 +1,9 @@
 
 
+
+
+
+
   body                        { margin: 0; }
 
   .wrapper                    { position: relative; width: 100%; margin: 0; padding: 0; }
@@ -33,6 +37,33 @@
 
   /*
   MEDIA QUERIES */
+
+
+  /* Mobile */
+  @media only screen and (min-width: 320px) and (max-width: 480px){
+    .menu             { position: relative; width: 100%; height: auto; }
+
+    .links            { width: 96%; margin: 0; padding: 2%;}
+
+    .links nav        { width: 96%; padding: 0 2% 5% 2%; margin: 0;}
+
+    .links nav ul     { width: 100%; padding: 0; margin: 0; }
+
+    .links nav li     { width: 24%; margin: 20px 1% 0 0; padding: 0; float: left; }
+
+    .social           { display: none; }
+
+    .content          {width: 100%; margin: 0; padding: 0; }
+
+    .container        { width: 98%; padding-left: 2%; padding-top: 2%; }
+
+    .container .block { width: 48%; max-width: 100%; margin-right: 2%; margin-bottom: 2%; }
+
+    .footer           { width: 96%; padding: 2%; position: relative; float: left;}
+  }
+
+
+  /*
 
   @media only screen and (max-width: 1600px){
     .container .block         { width: 23%; max-width: 100%; margin-right: 2%; margin-bottom: 2%; float: left; }
@@ -75,4 +106,9 @@
     .disclaimerText           { width: 100%; margin-top: 20px; float: left; }
     */
 
+  .clearfix:after{
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
   }

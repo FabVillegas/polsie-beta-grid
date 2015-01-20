@@ -1,5 +1,6 @@
 angular.module('polsie-beta-grid', [
-  'ui.router'
+  'ui.router',
+  'ngAnimate'
 ]).
 config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise('test');
