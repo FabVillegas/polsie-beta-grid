@@ -1,11 +1,10 @@
 <div ng-controller="secondCtrl">
 
-  <div class="wrapper">
-
-
-    <header>
-      <h1 class="title">Titulo</h1>
-      <nav ng-menu class="menu">
+  <div id="wrapper">
+    <header class="menu">
+      <h1 class="menuTitle">Titulo</h1>
+      <img ng-click="showLinks()" class="menuIcon" src="./images/menu.svg" />
+      <nav ng-show="isShown" class="menuLinks">
         <ul>
           <li>Enlace 1</li>
           <li>Enlace 2</li>
@@ -17,12 +16,39 @@
           <li>Enlace 8</li>
         </ul>
       </nav>
+    <div class="social">
+      <ul class="clearfix">
+        <li><img src="./images/facebook.svg" /></li>
+        <li><img src="./images/twitter.svg" /></li>
+        <li><img src="./images/instagram.svg" /></li>
+      </ul>
+      <div class="disclaimerText">© Copyright</div>
+    </div>
     </header>
 
-
-
-
-
+    <div class="content clearfix">
+      <div class="container clearfix">
+        <div class="block"><img src="./images/4.png" /></div>
+        <div class="block"><img src="./images/2.png" /></div>
+        <div class="block"><img src="./images/4.png" /></div>
+        <div class="block"><img src="./images/2.png" /></div>
+        <div class="block"><img src="./images/4.png" /></div>
+        <div class="block"><img src="./images/2.png" /></div>
+        <div class="block"><img src="./images/5.png" /></div>
+        <div class="block"><img src="./images/2.png" /></div>
+        <div class="block"><img src="./images/4.png" /></div>
+        <div class="block"><img src="./images/5.png" /></div>
+        <div class="block"><img src="./images/4.png" /></div>
+        <div class="block"><img src="./images/2.png" /></div>
+        <div class="block"><img src="./images/3.png" /></div>
+        <div class="block"><img src="./images/2.png" /></div>
+        <div class="block"><img src="./images/4.png" /></div>
+        <div class="block"><img src="./images/2.png" /></div>
+        <div class="block"><img src="./images/4.png" /></div>
+        <div class="block"><img src="./images/2.png" /></div>
+      </div>
+      <div class="footer">© Copyright</div>
+    </div>
   </div>
 
 </div>
