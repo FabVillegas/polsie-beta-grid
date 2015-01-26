@@ -3,12 +3,21 @@ angular.module('polsie-beta-grid', [
   'ngAnimate'
 ]).
 config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+<<<<<<< HEAD
 	$urlRouterProvider.otherwise('test');
 	$stateProvider.
 	state('test', {
 		url: '/test',
 		templateUrl: 'views/test-view.html',
 		controller: 'testCtrl'
+=======
+	$urlRouterProvider.otherwise('landing');
+	$stateProvider.
+	state('landing', {
+		url: '/landing',
+		templateUrl: 'views/landing-template.html',
+		controller: 'landingCtrl'
+>>>>>>> master
 	}).
 	state('second', {
 		url: '/second',
