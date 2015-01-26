@@ -1,19 +1,15 @@
-<div ng-controller="secondCtrl">
+<div ng-controller="landingCtrl">
 
   <div id="wrapper">
     <header class="menu">
       <h1 class="menuTitle">Titulo</h1>
-      <img ng-click="showLinks()" class="menuIcon" src="./images/menu.svg" />
+      <img ng-click="showLinks()" ng-show="displayIcon" class="menuIcon toggleMenu" src="./images/menu.svg" />
       <nav ng-show="isShown" class="menuLinks">
         <ul>
-          <li>Enlace 1</li>
-          <li>Enlace 2</li>
-          <li>Enlace 3</li>
-          <li>Enlace 4</li>
-          <li>Enlace 5</li>
-          <li>Enlace 6</li>
-          <li>Enlace 7</li>
-          <li>Enlace 8</li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Listing</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     <div class="social">
