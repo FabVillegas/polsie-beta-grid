@@ -4,8 +4,9 @@ angular.module('polsie-beta-grid').directive('toggleMenu', function($window, $do
     scope: false, // parent scope
     link: function(scope, element, attrs){
 
-      if ($document[0].body.offsetWidth > 768){
+      if ($document[0].body.offsetWidth >= 768){
         scope.displayIcon = false;
+        scope.isShown = true;
       }
       else{
         scope.displayIcon = true;
@@ -22,6 +23,7 @@ angular.module('polsie-beta-grid').directive('toggleMenu', function($window, $do
         }
         else{
           scope.display(false);
+          scope.$apply('isShown = ' + true); /* show menu */
         }
       });
     }
