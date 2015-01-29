@@ -10,6 +10,7 @@ angular.module('polsie-beta-grid').directive('toggleMenu', function($window, $do
       }
       else{
         scope.displayIcon = true;
+        scope.$apply('isShown = ' + true); /* show menu */
       }
 
       var target = angular.element($window);
