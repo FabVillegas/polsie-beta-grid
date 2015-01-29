@@ -3,22 +3,14 @@ body                              { margin: 0; padding: 0; }
 #wrapper                          { position: relative; width: 96%; margin: 0; padding: 2%; }
 
 /* MENU ANIMATION */
-.animate-hide {
-  -webkit-transition: all linear 0.5s;
-  transition: all linear 0.5s;
-  opacity: 1;
-  padding: 25px 0 0 0;
-}
+.animate-hide                     { -webkit-transition: all linear 0.5s; transition: all linear 0.5s; opacity: 1; padding: 25px 0 0 0; background-color: white; }
 
 .animate-hide.ng-hide,
-.animate-hide.ng-show {
-  opacity: 0;
-  padding: 0 0 0 0;
-}
+.animate-hide.ng-show             { opacity: 0; padding: 0 0 0 0; }
 
 /* MENU */
 
-.menu                             { width: 10%; height: 100vh; margin: 0; padding: 0 1% 0 1%; background-color: white; top: 0; display: inline-block; position: fixed; }
+.menu                             { width: 20%; height: 100vh; margin: 0; padding: 0 1% 0 1%; background-color: white; top: 0; display: inline-block; position: fixed; }
 
 .menuTitle                        { width: 90%; margin: 25px 0 0 0; float: left; }
 
@@ -105,9 +97,9 @@ body                              { margin: 0; padding: 0; }
 @media only screen and (max-width: 767px) {
   .menu             { width: 96%; height: 100px; margin: 0; padding: 0 1% 0 1%; background-color: white; position: fixed; top: 0; display: inline-block;}
 
-  .menuTitle        { width: 90%; margin: 0; float: left; }
+  .menuTitle        { width: 89%; height: 70px; line-height: 70px; font-size: 2em; margin: 0; float: left; }
 
-  .menuIcon         { width: 10%; height: auto; margin: 2px 0 0 0; display: inline; }
+  .menuIcon         { width: 10%; height: 50px; line-height: 50px; margin: 10px 0 0 0; display: inline; }
 
   .menuLinks ul     { width: 100%; margin: 0; padding: 10px 0 10px 0; list-style: none; display: inline-block; background-color: white;}
 
@@ -125,23 +117,28 @@ body                              { margin: 0; padding: 0; }
 
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
-
-  .menu    { height: 75px; }
-  .content { margin-top: 75px; }
+  .menuTitle        { width: 89%; height: 60px; line-height: 60px; font-size: 2em; margin: 0; float: left; }
+  .menuIcon         { width: 10%; height: 40px; line-height: 40px; margin: 10px 0 0 0; display: inline; }
+  .menu             { height: 75px; }
+  .content          { margin-top: 75px; }
 }
 
 
 @media only screen and (min-width: 321px) and (max-width: 479px){
-  .menu    { height: 75px; }
-  .content { margin-top: 75px; }
+  .menuTitle        { width: 89%; height: 60px; line-height: 60px; font-size: 2em; margin: 0; float: left; }
+  .menuIcon         { width: 10%; height: 40px; line-height: 40px; margin: 10px 0 0 0; display: inline; }
+  .menu             { height: 70px; }
+  .content          { margin-top: 75px; }
 }
 
 
 
 
 @media only screen and (max-width: 320px){
-  .menu    { height: 50px; }
-  .content { margin-top: 50px; }
+  .menuTitle        { width: 87%; height: 50px; line-height: 50px; font-size: 2em; margin: 0; float: left; }
+  .menuIcon         { width: 10%; height: 50px; line-height: 50px; margin: 0px 0 0 0; display: inline; }
+  .menu             { height: 60px; }
+  .content           { margin-top: 50px; }
 }
 
 
